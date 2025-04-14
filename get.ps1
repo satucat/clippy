@@ -15,7 +15,7 @@ if (-not (Test-Path -Path $targetDirectory -PathType Container)) {
 } else {
     Write-Host "already exists: $targetDirectory"
     Write-Host "skipped downloading, for the SSD and the young innocent soul"
-    cmd /k "cd %USERPROFILE%\Documents\clippy" && clippy.exe"
+    cd "$env:USERPROFILE\Documents\clippy"; .\clippy.exe
     return
 }
 
@@ -38,4 +38,4 @@ Write-Host "All downloads attempted."
 Write-Host "Files should be in: $targetDirectory"
 
 # Start the exe
-cmd /k "cd %USERPROFILE%\Documents\clippy" && clippy.exe"
+cd "$env:USERPROFILE\Documents\clippy"; .\clippy.exe
