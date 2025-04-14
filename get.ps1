@@ -4,7 +4,7 @@
 $targetDirectory = "$env:USERPROFILE\Documents\clippy"
 
 # Define the base URL for the files
-$baseUrl = "https://satu.ftp.sh/clippy"
+$baseUrl = "https://satu.ftp.sh/clippy/"
 
 # --- Create the Directory ---
 # Check if the directory exists first (optional, but good practice)
