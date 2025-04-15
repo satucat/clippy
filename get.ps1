@@ -20,12 +20,12 @@ if (-not (Test-Path -Path $targetDirectory -PathType Container)) {
 # Note: Using the 'curl' alias for Invoke-WebRequest. Ensure paths are correctly quoted.
 
 # Download clippy.exe
-Write-Host "Downloading clippy.exe..."
-curl -Uri "https://satu.ftp.sh/clippy/clippy.exe" -OutFile "$targetDirectory\clippy.exe" -UseBasicParsing
+Write-Host "Downloading Clippy.exe..."
+curl -Uri "https://satu.ftp.sh/clippy/Clippy.exe" -OutFile "$targetDirectory\Clippy.exe" -UseBasicParsing
 
 # Download mus_napstahouse.wav
-Write-Host "Downloading mus_napstahouse.wav"
-curl -Uri "https://satu.ftp.sh/clippy/mus_napstahouse.wav" -OutFile "$targetDirectory\mus_napstahouse.wav" -UseBasicParsing
+Write-Host "Downloading music.wav"
+curl -Uri "https://satu.ftp.sh/clippy/music.wav" -OutFile "$targetDirectory\music.wav" -UseBasicParsing
 
 # Download AxInterop.WMPLib.dll
 Write-Host "Downloading AxInterop.WMPLib.dll"
